@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+    --background-blue: rgb(62, 151, 185); 
+    --background-lightgrey: rgb(176 193 211 / 33%);
+    --color-text: white;
+}
+
+
+body {
+    margin: 0px;
+}
+#main {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: minmax(350px, 1fr) 5fr;
+}
+
+#left_panel {
+    background-color: var(--background-blue);
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+#logo_dashboard_picture {
+    width: 50px;
+    height: 50px;
+}
+
+#logo {
+    display: grid;
+    color: var(--color-text);
+    font-size: 2rem;
+    grid-template-columns: 3rem 8rem;
+    align-items: center;
+    gap: 10px;
+}
+
+#menu-first {
+    display: grid;
+    grid-template-columns: 3rem 8rem;
+    grid-template-rows: repeat(6, 1fr);
+    font-size: 1.3rem;
+    gap: 10px;
+}
+
+#menu-second {
+    display: grid;
+    grid-template-columns: 3rem 8rem;
+    grid-template-rows: repeat(3, 1fr);
+    font-size: 1.3rem;
+    gap: 10px;
+}
+
+.menu_picture {
+    width: 25px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.href-text {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+#full-menu {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    padding-left: 3rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding-top: 1.5rem;
+}
+
+#first-header {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    align-items: center;
+}
+
+#second-header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+}
+
+#right_panel {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 8fr;
+    background-color: var(--background-lightgrey);
+}
+
+#input-search {
+    background-color: var(--background-lightgrey);
+    border-radius: 20px;
+    height: 2rem;
+    width: 80%;
+    border: none;
+    text-align: center;
+}
+
+.search_picture {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+#search {
+    display: flex;
+    justify-content: left;
+}
+
+.rington_picture {
+    width: 35px;
+    height: 35px;
+}
+
+#profile_picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+#profile_picture-2 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    margin-right: 15px;
+}
+
+#min-panel {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    align-items: center;
+    font-family: "Roboto";
+    gap: 30px;
+}
+
+#second-profile {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+#text-hi {
+    font-size: 15px;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+.btn {
+    background-color: var(--background-blue);
+    border-radius: 20px;
+    height: 2.5rem;
+    width: 6rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#article {
+    padding-left: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.2rem;
+    column-gap: 25px;
+}
+
+#all_projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 15px 1fr;
+    border-radius: 30px;
+}
+
+.orange {
+    background-color: orange;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.main-project {
+    background-color: white;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.text-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.main-project-picture {
+    width: 25px;
+    height: 25px;
+}
+
+.project-picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 93%;
+    padding-bottom: 1.5rem;
+    gap: 25px;
+}
+
+#announcements {
+    display: grid;
+    grid-template-rows: 1fr 3.1rem 1fr;
+}
+
+.announc-project {
+    background-color: white;
+    width: 13vw;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+#announc-content {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid lightgrey;
+}
+
+input:focus {
+    outline: none;
+}
+
+.title-project {
+    font-family: "Roboto";
+    padding-left: 1.5rem;
+    padding-top: 2rem;
+    font-size: 15px;
+}
+
+.text-project {
+    padding-left: 1.5rem;
+    padding-right: 15px;
+    font-size: clamp(10px, 12px, 20px);
+}
