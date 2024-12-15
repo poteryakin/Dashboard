@@ -26,6 +26,7 @@ body {
 #logo_dashboard_picture {
     width: 50px;
     height: 50px;
+    fill: var(--color-text);
 }
 
 #logo {
@@ -58,6 +59,7 @@ body {
     height: 25px;
     margin-left: auto;
     margin-right: auto;
+    fill: var(--color-text);
 }
 
 .href-text {
@@ -126,7 +128,7 @@ body {
     height: 35px;
 }
 
-#profile_picture {
+.profile_picture {
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -241,23 +243,26 @@ body {
 
 .announc-project {
     background-color: white;
-    width: 13vw;
-    height: 30vh;
     border-radius: 10px;
 }
 
 #announc-content {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
     height: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
     padding-right: 20px;
+    padding-top: 25px;
+    gap: 10px;
 }
 
 .border-bottom {
     border-bottom: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 input:focus {
@@ -275,4 +280,33 @@ input:focus {
     padding-left: 1.5rem;
     padding-right: 15px;
     font-size: clamp(10px, 12px, 20px);
+}
+
+.announc-project-text {
+    font-size: clamp(9px, 11px, 13px);
+    padding-bottom: 10px;
+}
+
+.announc-title {
+    font-family: "Roboto";
+    
+}
+
+#announc-trending {
+    width: 35%;
+}
+
+#trending {
+    padding-left: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100%;
+    align-items: center;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
 }
